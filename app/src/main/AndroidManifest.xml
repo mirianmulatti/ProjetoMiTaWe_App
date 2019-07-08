@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".TelaLogin" />
+        <activity android:name=".CadEmp"></activity>
     </application>
 
 </manifest>
