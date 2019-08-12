@@ -8,7 +8,7 @@
     tools:context="com.example.aluno.projetoandroid.MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/botaoLogin"
         android:layout_width="95dp"
         android:layout_height="48dp"
         android:layout_marginBottom="8dp"
@@ -27,7 +27,7 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/botaoCadRes"
         android:layout_width="186dp"
         android:layout_height="47dp"
         android:layout_marginBottom="172dp"
@@ -42,7 +42,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/botaoCadCli"
         android:layout_width="178dp"
         android:layout_height="49dp"
         android:layout_marginBottom="8dp"
@@ -54,10 +54,10 @@
         android:text="Cadastrar como cliente"
         android:textColor="?attr/colorBackgroundFloating"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/botaoCadRes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/botaoLogin"
         app:layout_constraintVertical_bias="0.49" />
 </android.support.constraint.ConstraintLayout>
