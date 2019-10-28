@@ -25,9 +25,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(it);
             }
         });
-        botaoCadCli.setOnClickListener(new View.OnClickListener() {
+        botaoCadRes.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent it = new Intent(MainActivity.this, CadEmp.class);
+                startActivity(it);
+            }
+        });
+        botaoCadCli.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(MainActivity.this, CadCli.class);
                 startActivity(it);
             }
         });
