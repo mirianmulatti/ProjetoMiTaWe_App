@@ -11,6 +11,7 @@ public class Pessoa extends SugarRecord{
     private String nome;
     private String email;
 
+
     public Pessoa() {
 
     }
