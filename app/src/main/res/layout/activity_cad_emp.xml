@@ -182,7 +182,7 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/botaoImg" />
 
     <EditText
         android:id="@+id/editTextNome"
@@ -275,17 +275,30 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextNome" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="131dp"
+        android:id="@+id/botaoImg"
+        android:layout_width="106dp"
         android:layout_height="33dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="16dp"
         android:background="@color/colorAccent"
         android:text="Click aqui"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/buttonLoc" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="44dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toEndOf="@+id/botaoImg"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoc"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:color/holo_orange_light" />
 
 </android.support.constraint.ConstraintLayout>
