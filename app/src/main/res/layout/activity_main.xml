@@ -27,19 +27,35 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <Button
-        android:id="@+id/botaoCadRes"
+        android:id="@+id/lista"
         android:layout_width="186dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="172dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"
+        android:text="Listar"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoCadRes2" />
+
+    <Button
+        android:id="@+id/botaoCadRes2"
+        android:layout_width="186dp"
+        android:layout_height="47dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:background="@color/colorAccent"
         android:text="Cadastrar como restaurante"
         android:textColor="@android:color/background_light"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="266dp" />
 
     <Button
         android:id="@+id/botaoCadCli"
@@ -54,10 +70,9 @@
         android:text="Cadastrar como cliente"
         android:textColor="?attr/colorBackgroundFloating"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/botaoCadRes"
+        app:layout_constraintBottom_toTopOf="@+id/lista"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botaoLogin"
-        app:layout_constraintVertical_bias="0.49" />
+        app:layout_constraintVertical_bias="0.259" />
 </android.support.constraint.ConstraintLayout>

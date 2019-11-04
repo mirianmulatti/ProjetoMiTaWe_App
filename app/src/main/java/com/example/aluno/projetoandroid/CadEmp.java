@@ -12,11 +12,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Toast;
-
-import com.orm.SchemaGenerator;
-import com.orm.SugarContext;
-import com.orm.SugarDb;
 
 public class CadEmp extends AppCompatActivity {
 
@@ -37,13 +32,13 @@ public class CadEmp extends AppCompatActivity {
 
         /* Descomnetar esse código e ajustar ele */
 
-        //nome = (EditText) findViewById(R.id.editTextNome2);
-        //localizacao = (EditText) findViewById(R.id.editTextLoca);
-        //cardapio = (EditText) findViewById(R.id.editTextCar);
+        nome = (EditText) findViewById(R.id.editTextNome2);
+        localizacao = (EditText) findViewById(R.id.editTextLoca);
+        cardapio = (EditText) findViewById(R.id.editTextCar);
         telefone = (EditText) findViewById(R.id.editTextTel);
         email = (EditText) findViewById(R.id.editTextEmail);
         senha1 = (EditText) findViewById(R.id.editTextSenha1);
-        //senha2 = (EditText) findViewById(R.id.editTextSenha2);
+        senha2 = (EditText) findViewById(R.id.editTextSenha2);
         btn = (Button) findViewById(R.id.buttonCadastrar);
 
 
@@ -85,16 +80,16 @@ public class CadEmp extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, 0);
         }
 
-        /* Descomnetar esse código e ajustar ele
 
-        ImageViewFoto = (ImageView) findViewById(R.id.imageView2);
-        findViewById(R.id.botaoImg).setOnClickListener(new View.OnClickListener() {
+
+        ImageViewFoto = (ImageView) findViewById(R.id.imagem);
+        findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 tirarFoto();
             }
         });
-        */
+
 
         //depois que rodou uma vez comenta essas 3 linhas
         //SugarContext.init(getApplicationContext());
@@ -102,7 +97,7 @@ public class CadEmp extends AppCompatActivity {
         //schemaGenerator.createDatabase(new SugarDb(this).getDB());
 
 
-        nome = (EditText) findViewById(R.id.editTextNome);
+        nome = (EditText) findViewById(R.id.editTextLoca);
         email = (EditText) findViewById(R.id.editTextEmail);
         btn = (Button) findViewById(R.id.buttonCadastrar);
 

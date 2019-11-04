@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     private Button botaoCadRes;
@@ -16,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         botaoCadCli = (Button) findViewById(R.id.botaoCadCli);
-        botaoCadRes = (Button) findViewById(R.id.botaoCadRes);
+        botaoCadRes = (Button) findViewById(R.id.lista);
         botaoLogin = (Button) findViewById(R.id.botaoLogin);
 
         botaoLogin.setOnClickListener(new View.OnClickListener() {
