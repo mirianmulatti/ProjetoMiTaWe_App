@@ -15,6 +15,10 @@ import android.widget.ImageView;
 
 public class CadEmp extends AppCompatActivity {
 
+
+    //videooooooooooo https://www.youtube.com/watch?v=drnqZ7b6NMo
+
+
     private ImageView ImageViewFoto;
     private Button botaoImg;
     private EditText nome;
@@ -40,6 +44,8 @@ public class CadEmp extends AppCompatActivity {
         senha1 = (EditText) findViewById(R.id.editTextSenha1);
         senha2 = (EditText) findViewById(R.id.editTextSenha2);
         btn = (Button) findViewById(R.id.buttonCadastrar);
+
+
 
 
         btn.setOnClickListener(new View.OnClickListener() {

@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import java.util.List;
+
 public class Lista extends AppCompatActivity {
 
     @Override
@@ -27,15 +29,23 @@ public class Lista extends AppCompatActivity {
             }
         });
 
+
         ListView listview = (ListView) findViewById(R.id.listview);
-         String[] dados = new String[] { "Cupcake", "Donut", "Eclair", "Froyo", "Gingerbread",
-                "Honeycomb", "Ice Cream Sandwich", "Jelly Bean",
-                "KitKat", "Lollipop", "Marshmallow", "Nougat" };
+//         String[] dados = new String[] { "Cupcake", "Donut", "Eclair", "Froyo", "Gingerbread",
+//                "Honeycomb", "Ice Cream Sandwich", "Jelly Bean",
+//                "KitKat", "Lollipop", "Marshmallow", "Nougat" };
+//
+//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dados);
+//        listview.setAdapter(adapter);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dados);
-        listview.setAdapter(adapter);
 
+//        List<CadEmp> empresas = listview();
+//        ArrayAdapter<empresas> adapter = new ArrayAdapter<empresas>()(this, android.R.layout.simple_list_item_1);
+//
+//        ListView listaNomes = (ListView) findViewById(R.id.lista);
 
     }
+
+
 
 }

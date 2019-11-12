@@ -1,5 +1,7 @@
 package com.example.aluno.projetoandroid;
 
+import android.widget.ImageView;
+
 import com.orm.SugarRecord;
 
 /**
@@ -80,6 +82,8 @@ public class Empresa extends SugarRecord{
     }
 
     public void setSenha2(String senha2) {this.senha2 = senha2;}
+
+
 
 }
 
