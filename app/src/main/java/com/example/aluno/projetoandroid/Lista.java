@@ -8,10 +8,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
+
+import com.orm.query.Select;
 
 import java.util.List;
 
 public class Lista extends AppCompatActivity {
+
+    private List<Empresa> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +36,25 @@ public class Lista extends AppCompatActivity {
 
 
         ListView listview = (ListView) findViewById(R.id.listview);
+
+        try{
+            list = Select.from(Empresa.class).list();
+            String nomesEmpresas[] = new String[list.size()];
+            for (int i = 0; i < list.size(); i++){
+                nomesEmpresas[i] = list.get(i).getNome();
+            }
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nomesEmpresas);
+        listview.setAdapter(adapter);
+        } catch (Exception e){
+            System.out.println("<=================================================>");
+            e.printStackTrace();
+            System.out.println("<=================================================>");
+        }
+
+
+        Toast.makeText(this, list.get(0).getNome(), Toast.LENGTH_SHORT).show();
+
 //         String[] dados = new String[] { "Cupcake", "Donut", "Eclair", "Froyo", "Gingerbread",
 //                "Honeycomb", "Ice Cream Sandwich", "Jelly Bean",
 //                "KitKat", "Lollipop", "Marshmallow", "Nougat" };

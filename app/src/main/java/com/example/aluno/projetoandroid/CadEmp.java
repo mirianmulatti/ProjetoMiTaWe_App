@@ -29,6 +29,7 @@ public class CadEmp extends AppCompatActivity {
     private EditText senha1;
     private EditText senha2;
     private Button btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,31 +102,6 @@ public class CadEmp extends AppCompatActivity {
         //SugarContext.init(getApplicationContext());
         //SchemaGenerator schemaGenerator = new SchemaGenerator(this);
         //schemaGenerator.createDatabase(new SugarDb(this).getDB());
-
-
-        nome = (EditText) findViewById(R.id.editTextLoca);
-        email = (EditText) findViewById(R.id.editTextEmail);
-        btn = (Button) findViewById(R.id.buttonCadastrar);
-
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //receber os dados dos campos de texto
-                String n = nome.getText().toString();
-                String e = email.getText().toString();
-
-                Pessoa p = new Pessoa();
-                p.setNome(n);
-                p.setEmail(e);
-
-                //salvando
-                p.save();
-
-                nome.setText("");
-                email.setText("");
-
-            }
-        });
 
     }
     public void tirarFoto(){
